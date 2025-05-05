@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'Playfair Displayz';
+    src: url('font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Playfair Display';
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: #333;
+    color: #FEDC56;
+}
+
+header p{
+    font-style: italic;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    columns: 2;
+}
+
+header ul li p{
+    font-style: normal;
+    color: #9ACD32;
+    text-align: justify;
+}
+
+.navbar {
+    float: right;
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #e6e6e6;
+    margin: 0 20px;
+}
+.selected a {
+    color: #FEDC56;
+}
+
+.selected {
+    position: relative;
+}
+
+.selected::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid #FEDC56;
+    z-index: 1;
+}
+
+.selected hr {
+    margin-top: 9.5px;
+    border: 1px solid #FEDC56;
+}
+
+hr {
+    margin: 30px auto;
+    border: 1px solid #e6e6e6;
+}
+
+.profile-picture img {
+    max-width: 50%;
+    border-radius: 25px;
+}
+
+h1, h2, h3 {
+    color: #e6e6e6;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer hr{
+    width: 97%
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    columns: 3;
+}
+
+footer p {
+    font-style: italic;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.project {
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 800px;
+    background-color: #333;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #9ACD32;
+}
+
+.thesis {
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 800px;
+    background-color: #333;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    color: #9ACD32;
+}
+
+.thesis ul {
+    list-style: none;
+    padding: 0;
+}
+
+.thesis h2 {
+    margin: 0;
+}
+
+.thesis-exaae ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project h2 {
+    margin: 0;
+}
+
+.project-images {
+    columns: 3;
+    direction: rtl;
+}
+
+.project-title a img {
+    vertical-align: middle;
+}
+
+/*ul {*/
+/*    display: flow;*/
+/*}*/
+
+ul li {
+    margin-bottom: 12px;
+}
+
+canvas {
+    width: 90%;
+    border: 1px solid #ddd;
+    display: block;
+    margin: 20px auto;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+iframe {
+    width: 90vw;
+    height: 100vh;
+    border: none;
+    border-radius: 25px;
+}
+

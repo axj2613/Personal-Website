@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <title>Thesis Project</title>
+    <style>
+        /* Centering the iframe */
+        .pdf-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        iframe {
+            width: 1024px;
+            height: 620px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <a href="profile">Profile</a>
+        <div class="selected">
+            <a href="thesis">Thesis</a>
+        </div>
+        <a href="projects">My Projects</a>
+        <a href="cv">CV</a>
+    </div>
+    <hr>
+    <h1>Thesis Project</h1>
+</header>
+
+<section class="thesis">
+    <div class="thesis-exaae">
+        <ul>
+            <li>
+                <h2>Neuro-Evolution for Multivariate Time Series Anomaly Detection</h2>
+            </li>
+            <div class="project-images">
+                <li>
+                    <a href="Neuro-evolution%20for%20Multivariate%20Time%20Series%20Anomaly%20Detection%20-%20Thesis.pdf" download><img src="pdf.png" alt="Download PDF"></a>
+                </li>
+                <li>
+                    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C6liW7YAAAAJ&citation_for_view=C6liW7YAAAAJ:u-x6o8ySG0sC"><img src="google-scholar.png" alt="Google Scholar"></a>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <ul>
+        <li>This work provides novel, highly efficient methodology for multivariate time series anomaly detection
+            through the innovative application of neuro-evolutionary methods. It extends the Evolutionary eXploration
+            of Augmenting Memory Models (EXAMM) algorithm to co-evolve asymmetric encoder and decoder components of
+            autoencoder networks in a new algorithm called Evolutionary eXploration of Augmenting AutoEncoders (EXA-AE).
+            The evolutionary process is performed at a fine-grained edge and node level, generating LSTM recurrent
+            autoencoder networks with minimal compute requirements and number of trainable parameters. These networks
+            are used along with a one-class support vector machine (OCSVM) to generate boundary thresholds, which
+            identifies anomalies that outperform existing proven methods in terms of accuracy and cumulative F1 score,
+            while at the same time requiring orders of magnitude fewer trainable parameters. By comparing the
+            reconstruction error of model-produced forecasts, results suggest the fine-grained neuroevolution process
+            helps evolve autoencoders which capture the most important features first, which in turn enables efficient
+            and accurate anomaly detection. Results also show that the evolved autoencoders favor larger decoders, which
+            can further inform efficient design decisions for future autoencoder network architectures.</li>
+    </ul>
+</section>
+
+<section>
+    <div class="pdf-container">
+        <iframe src="Neuro-Evolution%20for%20Multivariate%20Time%20Series%20Anomaly%20Detection%20Presentation.pdf"></iframe>
+    </div>
+</section>
+
+<footer>
+    <hr>
+    <h2>Contact Details</h2>
+    <div class="contact">
+        <ul>
+            <li>
+                <a href="mailto:aryanukjha@gmail.com"><img src="email.png" alt="Email"></a>
+            </li>
+            <li>
+                <a href="tel:+15857339471"><img src="phone.png" alt="Phone"></a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/aryan-jha/" target="_blank"><img src="linkedin.png" alt="Linkedin"></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="profile.css">
+        <title>Projects</title>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <a href="profile">Profile</a>
+                <a href="thesis">Thesis</a>
+                <div class="selected">
+                    <a href="projects">My Projects</a>
+                </div>
+                <a href="cv">CV</a>
+            </div>
+            <hr>
+            <h1>My Projects</h1>
+            <p>In order of recency</p>
+        </header>
+
+        <h2><u>Solo Projects</u></h2>
+        <section class="project">
+                <ul>
+                    <li>
+                        <h3>MovieRAG</h3>
+                    </li>
+                    <div class="project-images">
+                        <li>
+                            <a href="https://github.com/axj2613/MovieRAG"><img src="github.png" alt="MovieRAG - GitHub"></a>
+                        </li>
+                    </div>
+                </ul>
+            <ul>
+                <li>
+                    <p>
+                        A Retrieval (and Cache) -Augmented Generation application that uses an external movie data source
+                        (IMDb) to provide context-aware responses to movie recommendation requests. It supports the
+                        following three types of architectures:
+                    </p>
+                    <p>
+                        &emsp;&emsp;1. VectorRAG: Combines a ChromaDB based retriever with an OpenAI generator. The retriever fetches
+                        relevant vector-embedded movie data (based on user prompt) and provides it to the generator with
+                        the original user’s query. The generator uses this additional context to generate an accurate and
+                        relevant response.
+                    </p>
+                    <p>
+                        &emsp;&emsp;2. GraphRAG: Converts user prompt into a Cypher query using the gpt-4, which retrieves accurate
+                        movie data from a cloud neo4j graph database instance.
+                    </p>
+                    <p>
+                        &emsp;&emsp;3. CAG: Cache-Augmented Generation passes in the entire dataset (much smaller than the original)
+                        into the chat buffer memory.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="project">
+            <ul>
+                <li>
+                    <h3>EXA-AE: Evolutionary eXploration of Augmenting AutoEncoders</h3>
+                </li>
+                <div class="project-images">
+                    <li>
+                        <a href="https://github.com/travisdesell/exa-star/tree/autoencoder-aryan"><img src="github.png" alt="EXAAE - GitHub"></a>
+                    </li>
+                </div>
+            </ul>
+            <ul>
+                <li>
+                    <p>
+                        Implementation of the novel EXA-AE framework that co-evolves asymmetric encoder and decoder
+                        components of autoencoder networks. The evolutionary process is performed at a fine-grained edge
+                        and node level, generating LSTM recurrent autoencoder networks with minimal compute requirements
+                        and number of trainable parameters. These networks are used along with a one-class support vector
+                        machine (OCSVM) to generate boundary thresholds, which identifies anomalies that outperform
+                        existing proven methods in terms of accuracy and cumulative F1 score, while at the same time
+                        requiring orders of magnitude fewer trainable parameters.
+                    </p>
+                    <p>
+                        Update: also supports an evolutionary bidirectional architecture for LSTM recurrent autoencoder,
+                        similar to BERT. This feature may allow for further optimization of the evolutionary process.
+                        Formal examination pending.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="project">
+            <ul>
+                <li>
+                    <h3>PyShop: NoSQL</h3>
+                </li>
+                <div class="project-images">
+                    <li>
+                        <a href="https://github.com/axj2613/PyShop-NoSQL"><img src="github.png" alt="PyShop: NoSQL - GitHub"></a>
+                    </li>
+                </div>
+            </ul>
+            <ul>
+                <li>
+                    <p>
+                        This repository contains a shopping application implemented in Python, utilizing MongoDB as the
+                        backend database. Additionally, there is an evaluator script designed to replicate the concurrent
+                        functionality of an online e-commerce platform and assess the system's behavior under concurrent
+                        operations.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <h2><u>Collaborative Projects</u></h2>
+        <section class="project">
+            <ul>
+                <li>
+                    <h3>Relational Playground Project</h3>
+                </li>
+                <div class="project-images">
+                    <li>
+                        <a href="https://github.com/dataunitylab/relational-playground"><img src="github.png" alt="Relational Playground - GitHub"></a>
+                    </li>
+                    <li>
+                        <a href="https://relationalplayground.com/"><img src="external-link.png" alt="Relational Playground - Link"></a>
+                    </li>
+                </div>
+            </ul>
+            <ul>
+                <li>
+                    <p>
+                        An educational tool to explore the relationship between relational algebra expressions and SQL
+                        queries. Assists users develop a deep understanding of how queries are processed and optimized
+                        in relational database systems.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="project">
+            <ul>
+                <li>
+                    <h3>Vulnerability History Project</h3>
+                </li>
+                <div class="project-images">
+                    <li>
+                        <a href="https://github.com/VulnerabilityHistoryProject"><img src="github.png" alt="Vulnerability History - GitHub"></a>
+                    </li>
+                    <li>
+                        <a href="https://vulnerabilityhistory.org/"><img src="external-link.png" alt="Vulnerability History - Link"></a>
+                    </li>
+                </div>
+            </ul>
+            <ul>
+                <li>
+                    <p>
+                        An open source curated repository of computer security vulnerabilities and their history. Online
+                        museum to learn about computer security and generate new hypotheses and insights.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section class="project">
+            <ul>
+                <li>
+                    <h3>srcML Project</h3>
+                </li>
+                <div class="project-images">
+                    <li>
+                        <a href="https://github.com/srcML/srcML"><img src="github.png" alt="srcML - GitHub"></a>
+                    </li>
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/SrcML"><img src="wikipedia.png" alt="srcML - Wiki"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.srcml.org/"><img src="external-link.png" alt="srcML - Link"></a>
+                    </li>
+                </div>
+            </ul>
+            <ul>
+                <li>The srcML format is an XML representation for source code, where the markup tags identify elements
+                    of the abstract syntax for the language. The srcML program is a command line application for the
+                    conversion source code to srcML, an interface for the exploration, analysis, and manipulation of
+                    source code in this form, and the conversion of srcML back to source code.
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <hr>
+            <h2>Contact Details</h2>
+            <div class="contact">
+                <ul>
+                    <li>
+                        <a href="mailto:aryanukjha@gmail.com"><img src="email.png" alt="Email"></a>
+                    </li>
+                    <li>
+                        <a href="tel:+15857339471"><img src="phone.png" alt="Phone"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/aryan-jha/" target="_blank"><img src="linkedin.png" alt="Linkedin"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
